@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static('public')); // Serve static files
 
-const WINSTON_API_KEY = 'YVahWiKcKyyGIRWz7FLHh6gVSY7kNcqY8fqkz7bka122a541';
+const WINSTON_API_KEY = '<INSERT API KEY HERE>';
 
 app.post('/check-plagiarism', async (req, res) => {
     const text = req.body.text;
